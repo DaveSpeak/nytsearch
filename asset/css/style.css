@@ -10,7 +10,7 @@ header{
 	text-align: center;
 	background:#13314f;
 	color: whitesmoke;
-	padding: 60px,40px;
+	
 	height: 75px;
 	width:auto;
 	margin: 25px;
@@ -23,11 +23,13 @@ h3{
 	padding: 15px;
 
 }
-panel title{
-	background: black;
-	padding: 10px;
-	text-align: left;
-	font-size: 24px;
+
+#searchFor{
+	border: black 2px solid;
+}
+
+label{
+	font-weight:700;
 }
 
 button {
