@@ -1,0 +1,31 @@
+/* nyt */
+
+
+body{
+	font-family:sans-serif;
+}
+header {
+	display:block;
+	text-align: center;
+	background: navy;
+	padding: 30px,40px;
+	font-size: 65px;
+	font-color: whitesmoke;
+
+}
+
+panel title{
+	background: black;
+	padding: 10px;
+	text-align: left;
+	font-size: 24px;
+}
+
+button {
+	background: silver;
+	border: 2px, gray, solid;
+	border-radius: 15px;
+	width: 35px;
+	height: 30px;
+	
+}
