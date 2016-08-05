@@ -1,16 +1,28 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <meta charset="utf-8">
     <title>NY article shearch</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link type="text/css" rel="stylesheet" href="asset/css/reset.css"/>
+    <link type="text/css" rel="stylesheet" href="asset/css/style.css"/>
+    <script src="asset/javascript/nyt.js"></script>
 </head>
 
 <body>
+    <header>
+        <!--<div class="page-header">
+  <h1>Example page header <small>Subtext for header</small></h1>
+        </div>-->
+        <h1 aria-hidden="true ><i class="fa fa-newspaper-o"></i>
+New York Times Search</h1>
+        
+    </header>
+
     <div class="container">
-        <div class="Jumbotron">
-            <h1>New York Times Search</h1>
+        <div class="flex-container">
+            <br>
+            <br>
             <div class="row">
 
 
@@ -20,12 +32,28 @@
                             <h3>Search Parameters</h3>
 
                         </div>
-                        <div class="panel body">
-                            <input type="text" class="form-control" id="searchTerm">
-                            <input type="text" class="form-control" id="numRecords">
-                            <input type="text" class="form-control" id="startYear">
-                            <input type="text" class="form-control" id="endYear">
-                        </div>
+                        <form>
+                          <div class="form-group">
+                                <label for="Search Term">Search Term:</label>
+                                <input type="text" class="form-control" id="searchTerm">
+                          </div>
+                          <div class="form-group">
+                                <label for="Number of Records">Number of Records to Retrieve:</label>
+                                <input type="number" class="form-control" id="numRecords">
+                          </div>
+                          <div class="form-group">
+                                <label for="Start Year">Start Year (optional):</label>
+                                <input type="number" class="form-control" id="startYear">
+                          </div>
+                           <div class="form-group">
+                                <label for="End Year">End Year (optional):</label>
+                                <input type="number" class="form-control" id="endYear">
+                            <br>
+                            <br>
+                                <a class="btn btn-default btn-sm" href="#"><i class="fa fa-cog"></i> Search</a>
+                                <a class="btn btn-default btn-sm" href="#"><i class="fa fa-cog"></i> Clear Search</a>
+                          </div>
+                        </form>
                     </div>
                 </div>
             </div>

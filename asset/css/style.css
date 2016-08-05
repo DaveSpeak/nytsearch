@@ -3,17 +3,26 @@
 
 body{
 	font-family:sans-serif;
+	line-height: 150%;
 }
-header {
-	display:block;
-	text-align: center;
-	background: navy;
-	padding: 30px,40px;
+header{
 	font-size: 65px;
-	font-color: whitesmoke;
-
+	text-align: center;
+	background:#13314f;
+	color: whitesmoke;
+	padding: 60px,40px;
+	height: 75px;
+	width:auto;
+	margin: 25px;
 }
 
+h3{
+	background:#13314f;
+	color: whitesmoke;
+	font-size:25px;
+	padding: 15px;
+
+}
 panel title{
 	background: black;
 	padding: 10px;
@@ -27,5 +36,5 @@ button {
 	border-radius: 15px;
 	width: 35px;
 	height: 30px;
-	
+
 }
