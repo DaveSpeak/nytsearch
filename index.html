@@ -2,62 +2,66 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>NY article shearch</title>
+    <title>NY article search</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <link type="text/css" rel="stylesheet" href="asset/css/reset.css"/>
     <link type="text/css" rel="stylesheet" href="asset/css/style.css"/>
-    <script src="asset/javascript/nyt.js"></script>
-</head>
+<!--     <script src="asset/javascript/nyt.js"></script>
+ --></head>
 
 <body>
     <header>
-        <h1 <i class="fa fa-newspaper-o"></i>
-New York Times Search</h1>
-        
+            <h1 <i class="fa fa-newspaper-o"></i>
+            New York Times Search</h1>
+            <br>
     </header>
 
     <div class="container">
         <div class="Jumbotron">
             <br>
-            <br>
-            <div class="row">
+
+        </div>
+        <div class="row">
 
 
-                <div class="col-sm-12">
-                    <div class="panel primary">
-                        <div class="panel heading">
-                            <!--<h3>Search Parameters</h3>-->
+            <div class="col-sm-12">
+                <div class="panel primary">
+                    <div class="panel heading">
+                        <!--<h3>Search Parameters</h3>-->
 
-                        </div>
-                        <form id="searchFor">
-                           <h3>Search Parameters</h3>
-                           <br>
-                          <div class="form-group">
-                                <label for="Search Term">Search Term:</label>
-                                <input type="text" class="form-control" id="searchTerm">
-                          </div>
-                          <div class="form-group">
-                                <label for="Number of Records">Number of Records to Retrieve:</label>
-                                <input type="number" class="form-control" id="numRecords">
-                          </div>
-                          <div class="form-group">
-                                <label for="Start Year">Start Year (optional):</label>
-                                <input type="number" class="form-control" id="startYear">
-                          </div>
-                           <div class="form-group">
-                                <label for="End Year">End Year (optional):</label>
-                                <input type="number" class="form-control" id="endYear">
-                            <br>
-                            <br>
-                                <a class="btn btn-default btn-sm" href="#"><i class="fa fa-cog"></i> Search</a>
-                                <a class="btn btn-default btn-sm" href="#"><i class="fa fa-cog"></i> Clear Search</a>
-                          </div>
-                        </form>
                     </div>
+                    <form id="searchFor">
+                       <h3>Search Parameters</h3>
+                       <br>
+                      <div class="form-group">
+                            <label for="Search Term">Search Term:</label>
+                            <input type="text" class="form-control" id="searchTerm">
+                      </div>
+                      <div class="form-group">
+                            <label for="Number of Records">Number of Records to Retrieve:</label>
+                            <input type="number" class="form-control" id="numRecords">
+                      </div>
+                      <div class="form-group">
+                            <label for="Start Year">Start Year (optional):</label>
+                            <input type="number" class="form-control" id="startYear">
+                      </div>
+                       <div class="form-group">
+                            <label for="End Year">End Year (optional):</label>
+                            <input type="number" class="form-control" id="endYear">
+                        <br>
+                        <br>
+                            <a class="btn btn-default btn-sm" id='search' href="#"><i class="fa fa-cog"></i> Search</a>
+                            <a class="btn btn-default btn-sm" id='clrsearch' href="#"><i class="fa fa-cog"></i> Clear Search</a>
+                      </div>
+                    </form>
                 </div>
             </div>
         </div>
+        <div class="row" id="queryResults"></div>
     </div>
+
+    <script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
+    <script type="text/javascript" src='asset/javascript/nyt.js'></script>
 </body>
 
 </html>
